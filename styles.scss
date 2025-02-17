@@ -1,0 +1,78 @@
+$color-background: #f5f5f5;
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+$color-success: #28a745;
+$color-info: #17a2b8;
+$color-warning: #ffc107;
+$color-danger: #dc3545;
+$color-white: #ffffff;
+@use "sass:color";
+@use "sass:map";
+
+$colors: (
+    primary: #007bff,
+    secondary: #6c757d,
+    success: #28a745,
+    danger: #dc3545
+);
+
+@function adjust-lightness($color, $percentage) {
+    @return color.adjust($color, $lightness: $percentage);
+}
+
+@mixin button-styles($color, $font-size, $color-background) {
+    font-size: $font-size;
+    background-color: $color-background;
+    color: $color;
+}
+
+@mixin button-style($color-name) {
+    $base-color: map.get($colors, $color-name);
+    $hover-color: adjust-lightness($base-color, 10%);
+
+    background-color: $base-color;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.flex-row {
+    @include flex-row();
+    .flex-column {
+        @include flex-column();
+        @each $name, $color in $colors {
+            h1 {
+                color: map.get($colors, primary);
+            }
+            p {
+                color: map.get($colors, secondary);
+            }
+            button {
+                @include button-style(primary);
+            }
+        }
+    }
+}

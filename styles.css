@@ -1,0 +1,88 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.flex-row .flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.flex-row .flex-column h1 {
+  color: #007bff;
+}
+.flex-row .flex-column p {
+  color: #6c757d;
+}
+.flex-row .flex-column button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.flex-row .flex-column button:hover {
+  background-color: rgb(51, 149.4, 255);
+}
+.flex-row .flex-column h1 {
+  color: #007bff;
+}
+.flex-row .flex-column p {
+  color: #6c757d;
+}
+.flex-row .flex-column button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.flex-row .flex-column button:hover {
+  background-color: rgb(51, 149.4, 255);
+}
+.flex-row .flex-column h1 {
+  color: #007bff;
+}
+.flex-row .flex-column p {
+  color: #6c757d;
+}
+.flex-row .flex-column button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.flex-row .flex-column button:hover {
+  background-color: rgb(51, 149.4, 255);
+}
+.flex-row .flex-column h1 {
+  color: #007bff;
+}
+.flex-row .flex-column p {
+  color: #6c757d;
+}
+.flex-row .flex-column button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.flex-row .flex-column button:hover {
+  background-color: rgb(51, 149.4, 255);
+}
+
+/*# sourceMappingURL=styles.css.map */
