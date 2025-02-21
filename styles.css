@@ -90,13 +90,15 @@
 }
 
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  gap: 1rem;
+  margin-top: 5rem;
+  width: min(1800px, 100%);
+  columns: 3 300px;
+  column-gap: 1em;
 }
 .image-container img {
+  display: block;
+  margin-bottom: 1em;
   max-width: 100%;
   height: auto;
   aspect-ratio: 16/9;
