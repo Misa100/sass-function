@@ -13,7 +13,7 @@
   gap: 0.5rem;
 }
 .flex-row .flex-column h1 {
-  color: #007bff;
+  color: #28a745;
 }
 .flex-row .flex-column p {
   color: #6c757d;
@@ -32,7 +32,7 @@
   background-color: rgb(51, 149.4, 255);
 }
 .flex-row .flex-column h1 {
-  color: #007bff;
+  color: #28a745;
 }
 .flex-row .flex-column p {
   color: #6c757d;
@@ -51,7 +51,7 @@
   background-color: rgb(51, 149.4, 255);
 }
 .flex-row .flex-column h1 {
-  color: #007bff;
+  color: #28a745;
 }
 .flex-row .flex-column p {
   color: #6c757d;
@@ -70,7 +70,7 @@
   background-color: rgb(51, 149.4, 255);
 }
 .flex-row .flex-column h1 {
-  color: #007bff;
+  color: #28a745;
 }
 .flex-row .flex-column p {
   color: #6c757d;
@@ -101,6 +101,25 @@
   height: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
+}
+
+.container {
+  background-color: #f5f5f5;
+  height: 10dvh;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: min(5em, 8%);
+  margin-bottom: 3rem;
+}
+.container p {
+  font-size: clamp(1rem, 7vw + 0.5rem, 2rem);
+}
+.container span {
+  font-size: clamp(0.5rem, 7vw + 0.5rem, 1rem);
 }
 
 /*# sourceMappingURL=styles.css.map */
